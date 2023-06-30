@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone Account</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- import bootstrap icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- import font-awesome/5.15.4 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- import font-awesome/6.4.0 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar container -->
+    <div class="bg-black">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-black">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/netflix_logo.png" alt="Netflix Logo" width="80" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TV Show</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">My List</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2 d-none"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn" type="submit">
+                    <i class="fas fa-search" style="color: #ffffff"></i>
+                  </button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      ><i class="fas fa-bell" style="color: #ffffff"></i
+                    ></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="./assets/avatar.png" alt="Avatar Logo" height="33" />
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="profile.html">MyProfile</a></li>
+                      <li><a class="dropdown-item" href="account.html">Account</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">LogOut</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="py-4">Account</h1>
+      <div class="row border-top pt-3">
+        <div class="col text-secondary fw-semibold">
+          <p>MEMBERSHIP & BILLING</p>
+        </div>
+        <div class="col fw-bolder">
+          <p>student@strive.school</p>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p>Change account email</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <button>Cancel Membership</button>
+        </div>
+        <div class="col"><p class="text-body-tertiary">Password: *******</p></div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p>Change password</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold"></div>
+        <div class="col border-bottom"><p class="text-body-tertiary">Phone: 321 044 1276</p></div>
+        <div class="col border-bottom"></div>
+        <div class="col border-bottom text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p>Change phone number</p>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col text-secondary fw-semibold"></div>
+        <div class="col">
+          <p class="fw-bolder">PayPall admin@strive.shool</p>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p>Update payment info</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold"></div>
+        <div class="col border-bottom">
+          <p class="fw-bolder"></p>
+        </div>
+        <div class="col border-bottom"></div>
+        <div class="col border-bottom text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p>Billing details</p>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col text-secondary fw-semibold"></div>
+        <div class="col">
+          <p class="fw-bolder"></p>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class="text-nowrap">Redeem gift card or promo code</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border-bottom text-secondary fw-semibold"></div>
+        <div class="col border-bottom">
+          <p class="fw-bolder"></p>
+        </div>
+        <div class="col border-bottom"></div>
+        <div class="col border-bottom text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class="">Where to buy gift cards</p>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col border-bottom text-secondary fw-semibold">
+          <p>PLAN DETAILS</p>
+        </div>
+        <div class="col border-bottom">
+          <p class="fw-bolder">Premium ULTRA HD</p>
+        </div>
+        <div class="col border-bottom"></div>
+        <div class="col border-bottom text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class="">Change plan</p>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col text-secondary fw-semibold">
+          <p>SETTINGS</p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Parental controls</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Test participation</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Manage download devices</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Activate a device</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Recent device straming activity</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col border-bottom text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col border-bottom">
+          <a class="text-decoration-none" href="#">
+            <p class="">Sign out of all devices</p>
+          </a>
+        </div>
+        <div class="col border-bottom"></div>
+        <div class="col border-bottom text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col text-secondary fw-semibold">
+          <p>MY PROFILE</p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none text-dark" href="#">
+            <p class="">Strive student</p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class="">Manage profiles</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+        <div class="col"></div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class="">Add profile email</p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Language</p>
+          </a>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Viewing activity</p>
+          </a>
+        </div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Playback settings</p>
+          </a>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Ratings</p>
+          </a>
+        </div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-secondary fw-semibold">
+          <p></p>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class="">Subtitle appearance</p>
+          </a>
+        </div>
+        <div class="col">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+        <div class="col text-end text-primary">
+          <a class="text-decoration-none" href="#">
+            <p class=""></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

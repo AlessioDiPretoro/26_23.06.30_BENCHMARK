@@ -1,0 +1,28 @@
+/* body {
+  color: white;
+} */
+
+footer p,
+footer button,
+footer a {
+  font-size: 10px !important;
+}
+
+footer button {
+  padding: 0.2em 0.6em !important;
+}
+
+.badge {
+  bottom: 2%;
+  left: 5%;
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .footerDiv {
+    width: 60% !important;
+  }
+}

@@ -1,0 +1,29 @@
+h1 {
+  font-size: 80px;
+}
+
+.i_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  bottom: 45%;
+  left: 15%;
+  border: 1px solid white;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  /* padding: 1em; */
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  /* Microsoft Edge */
+  color: white;
+  /* padding: 1em; */
+}

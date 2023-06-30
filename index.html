@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- import bootstrap icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- import font-awesome/5.15.4 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- import font-awesome/6.4.0 icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <!-- navbar container -->
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-black">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/netflix_logo.png" alt="Netflix Logo" width="80" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Show</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 d-none"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn" type="submit">
+                  <i class="fas fa-search" style="color: #ffffff"></i>
+                </button>
+              </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    ><i class="fas fa-bell" style="color: #ffffff"></i
+                  ></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="./assets/avatar.png" alt="Avatar Logo" height="33" />
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="profile.html">MyProfile</a></li>
+                    <li><a class="dropdown-item" href="account.html">Account</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">LogOut</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- 1 row container -->
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- <div class="row align-items-center"> -->
+      <div class="text-white d-flex align-items-center justify-content-between">
+        <h1 class="m-0 pe-5">TV Shows</h1>
+        <div class="dropdown">
+          <a
+            class="btn text-white border-white dropdown-toggle rounded-0"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genres
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Horros</a></li>
+            <li><a class="dropdown-item" href="#">Anime</a></li>
+            <li><a class="dropdown-item" href="#">Music</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="">
+        <a href="" class="text-decoration-none">
+          <i class="fas fa-stream p-2" style="color: #686868; border: 1px solid #686868"></i>
+        </a>
+        <a href="" class="text-decoration-none">
+          <i class="fas fa-th-large p-2" style="color: #686868; border: 1px solid #686868"></i>
+        </a>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- trending container -->
+    <div class="container mt-5">
+      <h2 class="text-white fs-4">Trending Now</h2>
+      <!-- carousel1 START -->
+      <div id="carousel1Indicators" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col position-relative">
+                <img src="./assets/media/media0.webp" class="d-block w-100" alt="..." />
+                <span class="badge text-bg-danger rounded-0 position-absolute">NEW EPISODES</span>
+              </div>
+              <div class="col">
+                <img src="./assets/media/media1.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col position-relative d-none d-md-block d-xl-block">
+                <img src="./assets/media/media2.webp" class="d-block w-100" alt="..." />
+                <span class="badge text-bg-danger rounded-0 position-absolute">NEW EPISODES</span>
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media3.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media4.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media5.webp" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media6.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media7.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media8.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media9.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media10.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media11.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media6.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media7.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media8.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media9.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media10.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media11.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel1Indicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel1Indicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel1 END -->
+    </div>
+    <!-- Watch it again container -->
+    <div class="container mt-5">
+      <h2 class="text-white fs-4">Watch It Again</h2>
+      <!-- carousel2 START -->
+      <div id="carousel2Indicators" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media12.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media13.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media14.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media15.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media16.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media17.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media18.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media19.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media20.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media21.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media22.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media23.webp" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media24.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media25.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media26.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media27.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media28.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media29.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel2Indicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel2Indicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel2 END -->
+    </div>
+    <!-- New releases container -->
+    <div class="container mt-5">
+      <h2 class="text-white fs-4">New releases</h2>
+      <!-- carousel3 START -->
+      <div id="carousel3Indicators" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media30.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media31.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media32.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media15.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media16.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media17.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media18.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media19.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media20.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media21.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media22.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media23.webp" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-xl-6 gy-2 gx-2">
+              <div class="col">
+                <img src="./assets/media/media24.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col">
+                <img src="./assets/media/media25.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media26.webp" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-md-block d-xl-block">
+                <img src="./assets/media/media27.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media28.jpg" class="d-block w-100" alt="..." />
+              </div>
+              <div class="col d-none d-xl-block">
+                <img src="./assets/media/media29.jpg" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel3Indicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel3Indicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-danger rounded-circle"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel2 END -->
+    </div>
+    <div class="empty m-5"></div>
+    <footer class="text-secondary">
+      <div class="container w-75 footerDiv">
+        <div class="row mb-2">
+          <div class="col">
+            <a class="text-decoration-none fs-5" href="">
+              <i class="fa-brands fa-square-facebook me-3" style="color: #808080"></i>
+            </a>
+            <a class="text-decoration-none fs-5" href="">
+              <i class="fa-brands fa-square-instagram me-3" style="color: #808080"></i>
+            </a>
+            <a class="text-decoration-none fs-5" href="">
+              <i class="fa-brands fa-twitter me-3" style="color: #808080"></i>
+            </a>
+            <a class="text-decoration-none fs-5" href="">
+              <i class="fa-brands fa-youtube me-3" style="color: #808080"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Audio and Subtitles</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Audio Description</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Help Center</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Gift Cards</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Media Center</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Investor Relations</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Jobs</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Terms of Use</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Privacy</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Legal Notices</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Cookie Preferences</p>
+            </a>
+          </div>
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Corporate Information</p>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <a class="text-decoration-none" style="color: #808080" href="#">
+              <p>Contact Us</p>
+            </a>
+          </div>
+          <div class="col">
+            <p></p>
+          </div>
+          <div class="col">
+            <p></p>
+          </div>
+          <div class="col">
+            <p></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-secondary rounded-0 mb-2">
+              Service Code
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>&copy; 1997-2019 Netflix, inc</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
